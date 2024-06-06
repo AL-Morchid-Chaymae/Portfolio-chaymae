@@ -5,7 +5,11 @@ const Circles = () => {
   return (
   <div>
     <Image
-      src={'/circles.png'} width={260} height={260} className='w-full'
+      src={'/circles.png'}
+       width={260} 
+       height={260} 
+       className='w-full'
+        alt='Cercles colorés'
     
     />
     </div>

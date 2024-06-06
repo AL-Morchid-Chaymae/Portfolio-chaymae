@@ -99,6 +99,21 @@ const About = () => {
   return (
   <div>
     <Circles />
+    {aboutData.map((section, sectionIndex) => (
+        <div key={sectionIndex}>
+          <h2>{section.title}</h2>
+          {section.info.map((info, infoIndex) => (
+            <div key={infoIndex}>
+              <h3>{info.title}</h3>
+              <ul>
+                {info.icons.map((icon, iconIndex) => (
+                  <li key={iconIndex}>{icon}</li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      ))}
   </div>
   );
 };
