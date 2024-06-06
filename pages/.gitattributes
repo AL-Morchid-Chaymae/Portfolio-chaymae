@@ -1,0 +1,11 @@
+# Normaliser les fins de ligne pour les fichiers texte
+* text=auto
+
+# Assurer les fins de ligne LF pour les fichiers de configuration
+*.json text eol=lf
+
+# Assurer les fins de ligne LF pour les fichiers JavaScript
+*.js text eol=lf
+
+# Assurer les fins de ligne LF pour les fichiers CSS
+*.css text eol=lf
